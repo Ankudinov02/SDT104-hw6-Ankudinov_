@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Winter Magic Getaway
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo" style  = "font-weight: bold; font-size: 24px;">
+                WinteMagic
+            </div>
+            <ul class = "nav-links">
+                <li><a href="#hero">About us</a></li>
+                <li><a href="#cabins">Cabins</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#book">Book</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero-section">
+    <div class="hero-header">
+        <h1>Escape to the Winter Magic</h1>
+        <p>May your coffee be hot, your sweater be chunky, and your winter be filled with quiet, snowy magic.</p>
+    </div>
+    
+    <img src="images/Screenshot from 2026-03-15 16-19-33.png" alt="Winter Mountains" class="hero-image">
+    
+    <div class="buttons-container">
+        <a href="#book" class="btn btn-pill">Book your cozy getaway</a>
+        <a href="#features" class="btn btn-rect">Next</a>
+    </div>
+</section>
+
+<section id="features" class="features-section">
+    <div class="features-grid">
+        
+        <div class="feature-card">
+            <h3>Warm Evenings</h3>
+            <img src="images/warmEvenings.png" alt="Hot cocoa">
+            <p>Enjoy complimentary hot cocoa and artisan coffee by the crackling fire.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Untouched Nature</h3>
+            <img src="images/untouchedNature.png" alt="Pine branch">
+            <p>Step outside into miles of serene, snow-covered pine forests and frosty trails.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Ultimate Comfort</h3>
+            <img src="images/ultimateComfort.png" alt="Chunky sweater">
+            <p>Wrap up in our signature chunky knit blankets and embrace the chill from the warmth of your room.</p>
+        </div>
+
+    </div>
+
+    <div class="buttons-container">
+        <a href="#hero" class="btn btn-rect">Back</a>
+        <a href="#cabins" class="btn btn-rect">Next</a>
+    </div>
+</section>
+<section id="book" class="booking-section">
+    <h2>Reserve Your Winter Getaway</h2>
+    
+    <form action="#" method="POST">
+        
+        <table class="booking-table">
+            <tr> <td><label for="email">Your email address</label></td> <td><input type="email" id="email" name="email" placeholder="example@mail.com" required></td> </tr>
+            <tr>
+                <td><label for="checkin">Check-in Date</label></td>
+                <td><input type="date" id="checkin" name="checkin" required></td>
+            </tr>
+            <tr>
+                <td><label for="checkout">Check-out Date</label></td>
+                <td><input type="date" id="checkout" name="checkout" required></td>
+            </tr>
+            <tr>
+                <td><label for="guests">Number of Guests</label></td>
+                <td><input type="number" id="guests" name="guests" min="1" value="1" required></td>
+            </tr>
+        </table>
+
+        <div class="buttons-container">
+            <a href="#features" class="btn btn-rect">Back</a>
+            <button type="submit" class="btn btn-pill">Book your cozy getaway</button>
+        </div>
+
+    </form>
+</section>
+</body>
+</html>
