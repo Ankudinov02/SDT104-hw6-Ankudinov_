@@ -1,4 +1,7 @@
 
+* {
+    box-sizing: border-box;
+}
 .navbar {
     display: flex;               
     justify-content: space-between; 
@@ -374,4 +377,64 @@ button.btn {
     width: 250px;
     height: 350px;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+   
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+   
+    .hero-header h1 {
+        font-size: 24px;
+    }
+
+    
+    .features-grid {
+        flex-direction: column;
+    }
+
+    
+    .testimonial-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+   
+    .cabins-grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .booking-table td {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .booking-table td:first-child {
+        padding-bottom: 5px;
+    }
+
+    
+    .buttons-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .buttons-container .btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
 }
