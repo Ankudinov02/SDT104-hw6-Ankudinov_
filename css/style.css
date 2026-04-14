@@ -367,12 +367,14 @@ button.btn {
 }
 
 .cabin-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    text-align: center;
 }
-
+.cabin-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 .cabin-item img {
     width: 250px;
     height: 350px;
